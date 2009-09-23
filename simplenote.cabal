@@ -1,0 +1,21 @@
+cabal-version: >= 1.6
+name:          simplenote
+version:       1.0
+build-type:    Simple
+license:       BSD3
+license-file:  LICENSE
+author:        marius a. eriksen
+category:      Network APIs
+synopsis:      Haskell interface for the simplenote API.
+description:   XXX
+maintainer:    marius a. eriksen
+copyright:     (c) 2009 marius a. eriksen
+
+library
+  build-depends: base == 4.*, time,
+                 -- hackage:
+                 json, curl >= 1.3.5, download-curl >= 0.1.1
+
+  exposed-modules:
+    Network.Simplenote
+
